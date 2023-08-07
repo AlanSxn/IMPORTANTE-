@@ -234,3 +234,316 @@
     
 </body>
 </html>
+
+body{
+    background-color: #1B1F27;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    user-select: none;
+    overflow: hidden;
+}
+
+.container-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login{
+    background-color: #0e0e13;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+#profile{
+    text-align: center;
+}
+
+#profile img{
+    width: 200px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#sucesso, #preencha, #negado{
+    display: none;
+    text-align: center;
+}
+
+input{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #252A34;
+    border: none;
+    height: 45px;
+    border-radius: 8px;
+    color: #CBD0F7;
+    padding-left: 2%;
+}
+
+input:focus{
+    outline: 2px solid #CBD0F7;
+}
+
+input::placeholder{
+    color: #CBD0F7;
+}
+
+form [type="submit"]{
+    display: block;
+    background-color: #5568FE;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+form [type="submit"]:hover{
+    background-color: #3b4abe;
+}
+
+p{
+    color: #CBD0F7;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #5568FE;
+}
+
+body{
+    background-color: #1B1F27;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+}
+
+p{
+    font-size: 17px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#sai{
+    background-color: #0e0e13;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+body{
+    background-color: #1B1F27;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+}
+
+p{
+    font-size: 17px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#sai{
+    background-color: #0e0e13;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+body{
+    background-color: #1B1F27;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+p{
+    font-size: 17px;
+}
+
+a{
+    text-decoration: none;
+    color: #5568FE;
+    font-weight: bold;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#texto{
+    background-color: #0e0e13;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+body{
+    background-color: #1B1F27;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#escolha{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: #0e0e13;
+    padding: 50px;
+    border-radius: 20px;
+    width: 50%;
+}
+
+#cafe p, #fast p, #cine p{
+    background-color: #5568FE;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+#cafe p:hover, #fast p:hover, #cine p:hover{
+    background-color: #3b4abe;
+}
+
+body{
+    background-color: #1B1F27;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+}
+
+p{
+    font-size: 17px;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#resgatado{
+    background-color: #0e0e13;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+const btn = document.querySelector("#btn")
+
+const usuario = document.querySelector(".usuario").value;
+
+const senha = document.querySelector(".senha").value;
+
+
+function send(){
+
+const usuario = document.querySelector(".usuario").value;
+
+const senha = document.querySelector(".senha").value;
+
+const preencha = document.querySelector("#preencha")
+
+const sucesso = document.querySelector("#sucesso")
+
+
+if(usuario.length <1 || senha.length <1){
+    
+    preencha.style.display = ('inline')
+
+    setTimeout(() => {
+
+        preencha.style.display = ('none')
+    
+        }, 1000);
+
+    return false;
+}
+
+if(usuario == "Sara" && senha == "Sara"){
+
+    sucesso.style.display = ('inline')
+
+    setTimeout(() => {
+
+    location.href = "https://github.com/AlanSxn/IMPORTANTE.git";
+
+    }, 500);
+    
+} else{
+
+    negado.style.display = ('inline')
+
+    setTimeout(() => {
+
+        location.href = "https://github.com/wLukiiS/Login-do-meu-coracao/actions";
+    
+        }, 500);
+
+};
+
+
+};
